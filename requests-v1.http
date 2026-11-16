@@ -1,0 +1,21 @@
+
+
+### Get restaurant orders
+GET http://localhost:3000/api/v1/restaurants/1/orders
+
+### Get pending orders
+GET http://localhost:3000/api/v1/restaurants/1/orders/pending
+
+### Get order by ID
+GET http://localhost:3000/api/v1/restaurants/1/orders/1
+
+### Update order status
+PATCH http://localhost:3000/api/v1/restaurants/1/orders/1/status
+Content-Type: application/json
+
+{
+  "status": "Completed"
+}
+
+### Delete order
+DELETE http://localhost:3000/api/v1/restaurants/1/orders/1
